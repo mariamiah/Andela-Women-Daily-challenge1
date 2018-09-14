@@ -13,6 +13,8 @@ def check_age(Age):
     ''' Function that checks a users age and returns their age group'''
     if Age < 0:
         return "Invalid age"
+    if len(str(Year_of_birth)) != 4:
+        return "Invalid Year of birth"
     
     if Age < 18:
         return "You are a minor"
