@@ -11,6 +11,9 @@ Age = current_year - Year_of_birth
 
 def check_age(Age):
     ''' Function that checks a users age and returns their age group'''
+    if Age < 0:
+        return "Invalid age"
+    
     if Age < 18:
         return "You are a minor"
     
